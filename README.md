@@ -24,15 +24,14 @@ przykład:
 [3,2,1]
 ```
 ### Najważniejsze polecenia w powłoce
-`q().` - Wyjście z powłoki  
 `help().` - Lista komend    
 `h()` - Wyświetla ostatnie 20 poleceń z konsoli   
 `c(Module).` - Kompiluje moduł Module.erl w bieżącym katalogu   
-`l(Module).` - Przeładowuje moduł   
 `f().` - Czyści wszystkie zmienne z powłoki    
 `f(x).` - Czyści tylko zmienną X    
 `i().` - Listuje działające procesy    
-`regs().` - Listuje zarejestrowane procesy  
+`i(x).` - Listuje szczegóły procesu x  
+`q().` - Wyjście z powłoki  
 `halt().` - Twarde wyjście bez cleanup  
 
 ### Flagi uruchomieniowe powłoki
@@ -439,3 +438,8 @@ worker() ->
 ```
 program oczekuje na wiadomość  
 `Pid ! {self(), "Hello from main process"},` - self() wysyła wiadomość asynchronicznie do Pid.
+
+# 6 Zródła
+- https://www.erlang.org/doc/system/seq_prog.html
+- https://favtutor.com/articles/whatsapp-discord-and-the-secret-to-handling-millions-of-concurrent-users/
+- https://www.youtube.com/watch?v=HRrfc9CiR_s&list=PLdOYTlKwc71ljrfUqrKYoULxRjqI0p8it
